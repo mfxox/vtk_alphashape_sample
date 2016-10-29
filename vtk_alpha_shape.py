@@ -22,7 +22,7 @@ polygon.SetPoints(points)
 
 delaunay = vtk.vtkDelaunay3D()
 delaunay.SetInputData(polygon)
-delaunay.SetAlpha(1)
+delaunay.SetAlpha(0.01)
 delaunay.AlphaLinesOff()
 delaunay.AlphaVertsOff()
 delaunay.Update()
